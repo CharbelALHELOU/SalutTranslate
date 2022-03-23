@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Mentor } from './models/Mentor';
+import { MentorService } from './services/mentor.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'mentorpack';
+  title = 'MentorPack';
 }

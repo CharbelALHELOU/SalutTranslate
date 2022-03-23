@@ -1,1 +1,71 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu&display=swap');
+:root {
+    --first: #002147;
+    --second: #334d6c;
+    --third: #800029;
+    --forth: #FF0052;
+    --background: #f8f8f8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav *,
+button {
+    font-family: 'Ubuntu', sans-serif !important;
+    color: var(--first);
+}
+
+p {
+    font-family: 'Lora', serif;
+    color: var(--second);
+    font-size: medium !important;
+    font-size: 16px !important;
+    text-align: justify;
+}
+
+
+/* width */
+
+*::-webkit-scrollbar {
+    width: 7px;
+}
+
+
+/* Track */
+
+*::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+*::-webkit-scrollbar-thumb {
+    background: var(--first);
+}
+
+
+/* Handle on hover */
+
+*::-webkit-scrollbar-thumb:hover {
+    background: var(--first);
+}
+
+
+/*
+html,
+body {
+    background-color: var(--first) !important;
+}*/
+
+section,
+header {
+    background-color: white;
+}

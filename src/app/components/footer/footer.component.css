@@ -1,0 +1,74 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:hover i {
+    text-decoration: none;
+}
+
+.small {
+    font-size: small;
+}
+
+footer {
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    #email a {
+        display: block;
+    }
+}
+
+.display-5,
+.display-4 {
+    font-weight: 600;
+    font-style: inherit;
+}
+
+.btn {
+    font-size: medium;
+    border: 2px solid var(--first);
+    color: var(--first);
+    border-radius: 50%;
+    height: 38px;
+    width: 38px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.btn:hover {
+    -webkit-box-shadow: 0 12px 10px -12px black;
+    -moz-box-shadow: 0 12px 10px -12px black;
+    box-shadow: 0 12px 10px -12px black;
+    transform: scale(1.05);
+}
+
+.linkedin:hover {
+    background-color: #0072b1;
+    border: 2px solid white;
+    color: white;
+}
+
+.youtube:hover {
+    background-color: red !important;
+    border: 2px solid white;
+    color: white;
+}
+
+.instagram:hover {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    border: 2px solid white;
+    color: white;
+}

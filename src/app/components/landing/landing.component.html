@@ -1,0 +1,112 @@
+<section id="Accueil" class="py-5">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-md-6 col-12 pb-md-1 d-md-none" style="align-items: center;">
+                <img src="../../../assets/landing.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 col-12 py-4">
+                <h1 class="display-6 py-3 pb-1" style="font-weight: 400;">Nous rendons le contenu numérique <b style="color: var(--forth) !important;">accessible</b> à tous</h1>
+                <p class="">
+                    Salut vous aide à atteindre les plus d'<b>1 milion de français</b> qui souffrent de limitation fonctionnelle auditive et pratiquent la langue des signes.
+                </p>
+                <!--<button class="btn btn-explore px-md-5 px-4 py-2"><a href="#Solution">Découvrir comment</a></button>-->
+            </div>
+            <div class="col-md-6 col-12 pb-md-1 d-none d-md-flex" style="align-items: center;">
+                <img src="../../../assets/landing.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="pb-5">
+    <div class="container">
+        <div class="row partners px-1">
+            <div class="col-md-2 col-4 py-1" *ngFor="let partner of partners">
+                <img [src]="partner" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="Solution" class="py-5" style="background-color: var(--first);">
+    <div class="container py-5">
+        <h4 class="text-center w-100 pb-1 text-white">Comment ça marche ?</h4>
+        <div class="row py-4 px-1">
+            <div class="col-md-4 col-12 p-3">
+                <div class="card p-3 py-3" (click)="show1 = !show1">
+                    <div class="row">
+                        <div class="col-12 pt-3 pb-4">
+                            <div class="circle">
+                                <i class="fas fa-video"></i>
+                            </div>
+                        </div>
+                        <div class="py-0 col-12 d-flex ">
+                            <h5>Importez votre contenu</h5>
+                        </div>
+                        <div class="col-1 d-none">
+                            <i class="fas fa-chevron-down" *ngIf="!show1"></i>
+                            <i class="fas fa-chevron-up" *ngIf="show1"></i>
+                        </div>
+                        <p [ngClass]="{'pt-3 pb-0 pt-md-2': true, 'show' : show1}">Téléchargez directement votre contenu sur notre site web ou utilisez notre API pour connecter l'audio de votre ordinateur à nos serveurs</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12 p-3">
+                <div class="card p-3 py-3" (click)="show2 = !show2">
+                    <div class="row">
+                        <div class="col-12 pt-3 pb-4">
+                            <div class="circle">
+                                <i class="fas fa-user-astronaut"></i>
+                            </div>
+                        </div>
+                        <div class="py-0 col-12 d-flex ">
+                            <h5>Choisissez votre avatar</h5>
+                        </div>
+                        <div class="col-1 d-none">
+                            <i class="fas fa-chevron-down" *ngIf="!show1"></i>
+                            <i class="fas fa-chevron-up" *ngIf="show1"></i>
+                        </div>
+                        <p [ngClass]="{'pt-3 pb-0 pt-md-2': true, 'show' : show2}">Faire parler Wonder-woman en langue des signes? Elon Musk? Vous-même? Nous vous proposons plus qu'une simple animation!</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12 p-3">
+                <div class="card p-3 py-3" (click)="show3 = !show3">
+                    <div class="row">
+                        <div class="col-12 pt-3 pb-4">
+                            <div class="circle">
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </div>
+                        <div class="py-0 col-12 d-flex ">
+                            <h5>Le tour est joué !</h5>
+                        </div>
+                        <div class="col-1 d-none">
+                            <i class="fas fa-chevron-down" *ngIf="!show1"></i>
+                            <i class="fas fa-chevron-up" *ngIf="show1"></i>
+                        </div>
+                        <p [ngClass]="{'pt-3 pb-0 pt-md-2': true, 'show' : show3}">Vous pouvez récupérer uniquement la traduction ou celle-ci superposée au contenu de départ. Sortie en MP4, AVI, MKV ou MOV selon vos besoin.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="Equipe" class="py-5">
+    <h4 class="text-center w-100 pb-1">Une équipe de haut niveau</h4>
+    <app-team></app-team>
+</section>
+
+<section id="Contact" class="py-5 d-flex" style="justify-content: center; align-items: center; flex-direction: column; background-color: var(--background);">
+    <div class="col-12 col-md-7 d-flex" style="justify-content: center; align-items: center; flex-direction: column;">
+        <h1 class="display-5 pb-5 text-center">Vous souhaitez une démonstration? Vous avez des questions?</h1>
+
+        <button class="btn btn-explore px-md-5 px-4 py-2" onclick="location.href='mailto:contact@salut-translate.fr';">Contactez-nous</button>
+
+    </div>
+</section>
+
+<app-footer></app-footer>
